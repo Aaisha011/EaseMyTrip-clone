@@ -1,0 +1,615 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+}
+
+nav {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#nav-links li {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#nav-links li i {
+    margin-right: 5px;
+}
+
+#nav-links li p {
+    font-size: small;
+    color: grey;
+}
+
+nav img {
+    height: 70%;
+}
+
+#icons-btn-link {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#icons-link img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+#icons-btn-link button {
+    border-radius: 15px;
+    background-color: rgb(25, 126, 208);
+    color: white;
+    border: none;
+    padding: 7px;
+}
+
+#head-top-bar {
+    height: 10%;
+    width: 100%;
+}
+
+#head-top-bar ul {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#head-main-sec {
+    height: 60%;
+    width: 100%;
+    /* background: #2e70d9; */
+    background: linear-gradient(90deg, rgba(46, 112, 217, 1) 42%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    overflow: hidden;
+    padding: 21px;
+}
+
+#main-top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-top ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 7px;
+    list-style: none;
+}
+
+#main-ul-li {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#destination {
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0;
+}
+
+#fares-section {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+
+.fares-sec-style {
+    display: flex;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.352);
+    border-radius: 11px;
+    border: 1px solid white;
+    padding: 11px;
+}
+
+#discover-btn {
+    background-color: rgb(93, 184, 219);
+    color: white;
+    border-radius: 9px;
+    border: 1px solid white;
+    padding: 11px 11px 31px 11px;
+    height: 30px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#head-bottom {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.941);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+#main-ul {
+    display: flex;
+    list-style: none;
+    gap: 21px;
+}
+
+#slider {
+    width: 100%;
+    height: 80vh;
+}
+
+#booking-slider {
+    width: 100%;
+    height: 70%;
+    /* overflow: auto; */
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#slides-container {
+    height: 80%;
+    width: 2400px;
+    display: flex;
+    gap: 11px;
+}
+
+.offer-slides {
+    width: 400px;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 11px;
+}
+
+.slides-img {
+    height: 60%;
+    width: 100%;
+    color: white;
+}
+
+#slides-1 {
+    background-image: url(./assests/offer-slider/slides-1.png);
+    background-size: cover;
+}
+
+#offers-slider-section {
+    height: 40%;
+    width: 100%;
+    overflow: auto;
+    border-radius: 21px;
+}
+
+#scroller-slides-container {
+    height: 60%;
+    width: 200%;
+    display: flex;
+}
+
+.offer-scroller {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 21px;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-scroller img {
+    height: 100%;
+    width: 100%;
+    border-radius: 17px;
+}
+
+.offer-scroller i {
+    background-color: rgb(209, 200, 200);
+    padding: 11px;
+    border-radius: 50%;
+}
+
+#tourist {
+    height: 50vh;
+    width: 95%;
+    border: 2pox solid rgb(156, 200, 61);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tourist-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 11px;
+}
+
+.tourist-card {
+    height: 100%;
+    width: 15%;
+    border: 2px solid gray;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 11px;
+    color: white;
+
+}
+
+.tourist-card p {
+    font-size: small;
+}
+
+#andman {
+    background-image: url("./assests/tourist/andman.png");
+    background-size: cover;
+}
+
+#kerala {
+    background-image: url("./assests/tourist/kerela.png");
+    background-size: cover;
+}
+
+#kashmir {
+    background-image: url("./assests/tourist/kashmir.png");
+    background-size: cover;
+}
+
+#rajsthan {
+    background-image: url("./assests/tourist/rajsthan.png");
+    background-size: cover;
+}
+
+#favourite-places {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fav-cards-container {
+    display: flex;
+}
+
+#travel-blogs-section {
+    height: 90vh;
+    width: 100%;
+    border: 2px solid navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#travel-blogs-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    /* gap:11px; */
+}
+
+.traval-card {
+    height: 100%;
+    width: 23%;
+    border-radius: 17px;
+    box-shadow: 1px 1px 7px 1px rgb(209, 204, 204);
+}
+
+.traval-img {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.travel-tag {
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 9px 21px;
+    border-radius: 21px;
+    color: white;
+    margin: 7px 0 0 11px;
+    font-size: small;
+}
+
+#travel-one {
+    background-image: url("./assests/traval/traval-1.png");
+}
+
+#travel-two {
+    background-image: url("./assests/traval/traval-2.png");
+}
+
+#travel-three {
+    background-image: url("./assests/traval/travel-3.png");
+}
+
+#travel-four {
+    background-image: url("./assests/traval/travel-4.png");
+}
+
+#travel-one,
+#travel-two,
+#travel-three,
+#travel-four {
+    background-size: cover;
+    border-radius: 17px 17px 0 0;
+}
+
+.traval-contetnt {
+    width: 100%;
+    height: 40%;
+    padding: 17px;
+}
+
+.traval-contetnt p {
+    font-size: medium;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 11px;
+}
+
+.traval-contetnt a {
+    text-decoration: none;
+    color: rgb(19, 100, 138);
+}
+
+#travel-blogs-section button {
+    background-color: rgb(21, 108, 222);
+    color: white;
+    padding: 11px 21px;
+    border-radius: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+#book-section {
+    height: 100vh;
+    width: 100%;
+}
+
+#book-top {
+    height: 20%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+}
+
+#book-top ul {
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: c;
+    list-style: none;
+    gap: 11px;
+    padding: 21px 21px;
+    border-radius: 21px;
+    border: 2px solid lightblue;
+}
+
+#book-rating-li i {
+    background-color: rgb(89, 214, 89);
+    color: white;
+    padding: 5px;
+}
+
+#donate-section {
+    width: 100%;
+    height: 50vh;
+    background-image: url('./assests/donate.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 11rem;
+}
+
+#donate-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#heritage {
+    color: #772D09;
+}
+
+#donate-content button {
+    background-color: darkorange;
+    color: white;
+    padding: 11px 21px;
+    border: none;
+    margin-top: 11px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+footer {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 31px;
+}
+
+#footer-service {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 81px;
+    padding: 21px;
+}
+
+#footer-service-ul {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: small;
+    list-style: none;
+}
+
+#footer-service-ul li {
+    border-bottom: 1px solid white;
+    padding: 3px 0;
+}
+
+#footer-first-li {
+    background-color: rgb(31, 108, 208);
+    border-radius: 0 21px 21px 0;
+}
+
+#footer-service-container {
+    height: 100%;
+    width: 55%;
+
+}
+
+
+#footer-uls-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 31px;
+}
+
+#footer-uls-container ul {
+    height: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+#footer-download {
+    width: 100%;
+    height: 30%;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 21px;
+}
+
+#footer-dwn-right {
+    width: 50%;
+}
+
+#footer-dwn-right img {
+    height: 60px;
+    width: 130px;
+    object-fit: contain;
+}
+
+#footer-dwn-right p {
+    font-size: small;
+}
+
+.footer-dwn {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11px;
+    align-items: center;
+}
+
+.footer-dwn img {
+    width: 100px;
+    height: 40px;
+}
+
+#footer-scn-img {
+    height: 100px;
+}
+
+#store-imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+#footer-bottom {
+    width: 100%;
+    height: 10%;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-bottom img {
+    width: 50%;
+}
